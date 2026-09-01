@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Коммерческое предложение — nikel digital studio × Auto Rental &amp; Import</title>
+<title>Коммерческое предложение — nikel digital studio × Cyprus Cars (стартовый пакет)</title>
 <style>
 @font-face{
   font-family:'Host Grotesk';
@@ -109,7 +109,7 @@ img,svg{ display:block; max-width:100%; }
 .intro p{ font-size:16.5px; font-weight:400; line-height:1.7; color:var(--ink); max-width:62ch; margin-bottom:18px; letter-spacing:-0.1px; }
 .intro p:last-of-type{ margin-bottom:0; }
 .intro .salut{ font-weight:600; font-variation-settings:'wght' 600; font-size:19px; letter-spacing:-0.02em; margin-bottom:22px; }
-.approach-list{ list-style:none; margin-top:40px; margin-bottom:40px; display:flex; flex-direction:column; }
+.approach-list{ list-style:none; margin-top:40px; margin-bottom:40px; max-width:880px; display:flex; flex-direction:column; }
 .approach-list li{ display:flex; align-items:baseline; gap:18px; padding:16px 0; border-top:1px solid var(--line); font-size:15px; letter-spacing:-0.1px; }
 .approach-list li:last-child{ border-bottom:1px solid var(--line); }
 .approach-num{ font-weight:600; font-variation-settings:'wght' 600; color:var(--muted); font-size:13px; min-width:22px; }
@@ -138,13 +138,13 @@ img,svg{ display:block; max-width:100%; }
 .section-body p a{ color:var(--ink); border-bottom:1px solid var(--line); text-decoration:none; transition:color .15s,border-color .15s; }
 .section-body p a:hover{ color:var(--muted); border-color:var(--ink); }
 
-.callout{ display:flex; gap:14px; background:var(--paper-raised); border-radius:16px; padding:20px 22px; margin-top:26px; margin-bottom:26px; max-width:64ch; }
+.callout{ display:flex; gap:14px; background:var(--paper-raised); border-radius:16px; padding:20px 22px; margin-top:26px; margin-bottom:26px; max-width:880px; }
 .callout .dot{ width:22px; height:22px; min-width:22px; border-radius:50%; background:var(--muted); display:flex; align-items:center; justify-content:center; margin-top:1px; }
 .callout .dot svg{ width:11px; height:11px; stroke:var(--paper); stroke-width:2.4; fill:none; }
 .callout p{ font-size:14px; line-height:1.7; color:var(--ink); letter-spacing:-0.1px; }
 
 /* ── TABLES ── */
-.tbl-wrap{ overflow-x:auto; margin-top:6px; margin-bottom:28px; max-width:800px; }
+.tbl-wrap{ overflow-x:auto; margin-top:6px; margin-bottom:28px; max-width:880px; }
 table.pricing{ width:100%; border-collapse:collapse; font-size:14.5px; min-width:480px; letter-spacing:-0.1px; }
 table.pricing thead th{ text-align:left; font-size:10.5px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); border-bottom:1.5px solid var(--line); padding:11px 4px; }
 table.pricing tbody td{ padding:16px 4px; border-bottom:1px solid var(--line); vertical-align:top; }
@@ -165,17 +165,47 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
   table.pricing td.comment{ font-size:13px; margin-top:2px; }
 }
 
-.includes{ margin-top:24px; margin-bottom:24px; }
+.includes{ margin-top:24px; margin-bottom:24px; max-width:880px; }
 .includes-label{ font-size:11px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
 .includes ul{ list-style:none; display:flex; flex-direction:column; gap:9px; }
 .includes li{ font-size:14px; color:var(--ink); padding-left:20px; position:relative; line-height:1.6; letter-spacing:-0.1px; }
-.includes li a{ color:var(--ink); border-bottom:1px solid var(--line); text-decoration:none; transition:color .15s,border-color .15s; }
-.includes li a:hover{ color:var(--muted); border-color:var(--ink); }
 .includes li::before{ content:''; position:absolute; left:0; top:8px; width:8px; height:8px; border-radius:50%; background:var(--muted); }
 
-.pkg-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:28px; margin-bottom:28px; max-width:760px; }
-.pkg-grid-single{ grid-template-columns:1fr; max-width:372px; }
+.pkg-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:28px; margin-bottom:28px; max-width:880px; }
+.pkg-grid-single{ grid-template-columns:1fr; max-width:420px; }
 .pkg-card{ background:var(--paper-raised); border-radius:16px; padding:26px; }
+.pkg-meta{ display:inline-flex; align-items:center; gap:7px; font-size:12.5px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:-0.05px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:999px; padding:7px 14px; margin:2px 0 16px; }
+.pkg-meta svg{ width:13px; height:13px; stroke:var(--muted); stroke-width:2; fill:none; }
+code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:0.9em; background:var(--paper-raised); padding:2px 6px; border-radius:5px; }
+
+/* ── TAB SWITCH ── */
+.tab-switch{ display:inline-flex; gap:2px; background:var(--paper-raised); border-radius:999px; padding:4px; margin-bottom:32px; }
+.tab-switch button{ font-family:var(--font); border:none; background:transparent; color:var(--muted); font-size:14px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:-0.1px; padding:11px 22px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
+.tab-switch button.active{ background:var(--ink); color:#fff; }
+[data-tab-panel]{ display:none; }
+[data-tab-panel].active{ display:block; }
+@media (max-width:720px){ .tab-switch{ width:100%; } .tab-switch button{ flex:1; padding:11px 10px; } }
+
+/* ── COMPARISON TABLE (visible grid) ── */
+.compare-table{ width:100%; border-collapse:collapse; font-size:14px; min-width:560px; letter-spacing:-0.1px; border:1px solid var(--line); }
+.compare-table th, .compare-table td{ border:1px solid var(--line); padding:14px 18px; text-align:left; vertical-align:top; }
+.compare-table thead th{ background:var(--paper-raised); font-size:10.5px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); }
+.compare-table thead th:first-child{ color:var(--ink); }
+.compare-table tbody td{ color:var(--ink); line-height:1.55; }
+.compare-table tbody td:first-child{ font-weight:600; font-variation-settings:'wght' 600; background:var(--paper-raised); white-space:nowrap; }
+
+/* ── STAT GRID ── */
+.stat-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px; margin-bottom:28px; max-width:880px; }
+.stat-card{ background:var(--paper-raised); border-radius:16px; padding:22px 20px; }
+.stat-num{ font-size:30px; font-weight:700; font-variation-settings:'wght' 700; letter-spacing:-0.02em; color:var(--ink); font-variant-numeric:tabular-nums; line-height:1.1; margin-bottom:8px; }
+.stat-label{ font-size:13px; color:var(--muted); line-height:1.5; }
+
+/* ── CASE GRID ── */
+.case-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; margin-bottom:24px; max-width:880px; }
+.case-card{ background:var(--paper-raised); border-radius:16px; padding:26px; display:flex; flex-direction:column; }
+.case-card h4{ font-size:15px; font-weight:600; font-variation-settings:'wght' 600; margin-bottom:8px; letter-spacing:-0.1px; }
+.case-card p{ font-size:13px; color:var(--muted); line-height:1.65; margin-bottom:18px; flex:1; }
+.case-card .btn{ align-self:flex-start; }
 .pkg-card h4{ font-size:14px; font-weight:600; font-variation-settings:'wght' 600; margin-bottom:4px; letter-spacing:-0.1px; }
 .pkg-price{ font-size:28px; font-weight:600; font-variation-settings:'wght' 600; margin:8px 0 12px; letter-spacing:-0.03em; font-variant-numeric:tabular-nums; }
 .pkg-card p{ font-size:13px; color:var(--muted); line-height:1.65; letter-spacing:-0.1px; }
@@ -187,7 +217,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
 .cost-total-value small{ font-size:14px; font-weight:400; color:rgba(244,244,240,0.6); margin-left:8px; letter-spacing:-0.1px; }
 
 /* ── TERMS ── */
-.terms-grid{ display:grid; grid-template-columns:1fr 1fr; gap:36px 48px; margin-top:8px; margin-bottom:8px; }
+.terms-grid{ display:grid; grid-template-columns:1fr 1fr; gap:36px 48px; margin-top:8px; margin-bottom:8px; max-width:880px; }
 .terms-block h4{ font-size:11px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; }
 .terms-block ul{ list-style:none; display:flex; flex-direction:column; gap:9px; }
 .terms-block li{ font-size:14px; color:var(--ink); line-height:1.65; padding-left:16px; position:relative; letter-spacing:-0.1px; }
@@ -211,6 +241,8 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
   .parties{ grid-template-columns:1fr; }
   .pkg-grid{ grid-template-columns:1fr; }
   .terms-grid{ grid-template-columns:1fr; }
+  .stat-grid{ grid-template-columns:1fr 1fr; }
+  .case-grid{ grid-template-columns:1fr; }
   .cover{ padding:64px var(--gutter) 48px; }
   .cover-top{ margin-bottom:64px; }
 }
@@ -227,7 +259,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
     </div>
     <div class="topbar-actions">
       <a href="https://nikelstudio.com/" target="_blank" class="btn secondary no-arrow">
-        Перейти на сайт
+        Перейти на&nbsp;сайт
       </a>
       <a href="https://wa.me/380933624193" target="_blank" class="btn">
         Начать сотрудничество
@@ -239,7 +271,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
 
 <div class="bottom-cta-bar">
   <a href="https://nikelstudio.com/" target="_blank" class="btn secondary no-arrow">
-    Перейти на сайт
+    Перейти на&nbsp;сайт
   </a>
   <a href="https://wa.me/380933624193" target="_blank" class="btn">
     Начать сотрудничество
@@ -253,13 +285,13 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
   <div class="cover-inner">
     <div class="cover-top">
       <div class="cover-word">nìkel digital studio</div>
-      <span class="tag-pill">Коммерческое предложение</span>
+      <span class="tag-pill">Коммерческое предложение · старт</span>
     </div>
-    <h1>Платформа аренды<br>и импорта автомобилей</h1>
-    <p class="cover-sub">Разработка сайта с дизайном от студии и техническая поддержка после запуска — для бизнеса аренды и импорта автомобилей на Кипре.</p>
+    <h1>Аренда и&nbsp;импорт авто<br>Стартовый пакет</h1>
+    <p class="cover-sub">Компактная версия платформы — проверить бизнес-модель, прежде чем вкладываться в&nbsp;полный функционал.</p>
     <div class="cover-meta">
       <div class="cm-item"><span class="cm-label">Для</span><span class="cm-value">Auto Rental &amp; Import (Кипр)</span></div>
-      <div class="cm-item"><span class="cm-label">Дата</span><span class="cm-value">24 августа 2026</span></div>
+      <div class="cm-item"><span class="cm-label">Дата</span><span class="cm-value">1 сентября 2026</span></div>
       <div class="cm-item"><span class="cm-label">Подготовила</span><span class="cm-value">Elizaveta Nikolaenko</span></div>
       <div class="cm-item"><span class="cm-label">Студия</span><span class="cm-value">nikel digital studio</span></div>
     </div>
@@ -270,16 +302,21 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
 
   <section class="intro">
     <p class="salut">Добрый день!</p>
-    <p>Сайт объединяет два направления бизнеса — аренду автомобилей на Кипре и импорт автомобилей из Японии под заказ — под одной цифровой платформой.</p>
-    <p>Ниже — три пакета разработки (объём можно адаптировать под бюджет и расширять по мере роста бизнеса), мобильное приложение как отдельное направление, дополнительные доработки и техническая поддержка после запуска.</p>
+    <p>Ниже — стартовый пакет для&nbsp;той же&nbsp;платформы аренды и&nbsp;импорта автомобилей, по&nbsp;которой мы уже присылали полное предложение. Это первый, компактный шаг: закладываем архитектуру, которая растёт без&nbsp;переделки, но&nbsp;начинаем с&nbsp;базового набора функций — чтобы проверить бизнес-модель, не&nbsp;вкладываясь сразу в&nbsp;полный объём.</p>
     <div class="callout">
       <span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
-      <p>Если сейчас важнее начать с малого и проверить бизнес-модель — есть более компактный стартовый пакет за €3 000: <a href="https://nnikollaenko.github.io/wavex/starter.html" target="_blank">nnikollaenko.github.io/wavex/starter</a>.</p>
+      <p>Полное предложение по&nbsp;платформе — со&nbsp;всеми пакетами, приложением и&nbsp;доп. функциями — доступно здесь: <a href="https://nnikollaenko.github.io/wavex/commercial-proposal.html" target="_blank">nnikollaenko.github.io/wavex</a>. Этот документ — его сокращённая версия для&nbsp;первого шага.</p>
     </div>
     <ul class="approach-list">
-      <li><span class="approach-num">01</span><span class="t">Разработка сайта — три пакета</span></li>
-      <li><span class="approach-num">02</span><span class="t">Приложения для iPhone и Android</span></li>
-      <li><span class="approach-num">03</span><span class="t">Техническая поддержка</span></li>
+      <li><span class="approach-num">01</span><span class="t">Контекст</span></li>
+      <li><span class="approach-num">02</span><span class="t">Структура сайта</span></li>
+      <li><span class="approach-num">03</span><span class="t">Что&nbsp;видит клиент</span></li>
+      <li><span class="approach-num">04</span><span class="t">Что&nbsp;видит менеджер</span></li>
+      <li><span class="approach-num">05</span><span class="t">Реализация</span></li>
+      <li><span class="approach-num">06</span><span class="t">Как&nbsp;мы работаем</span></li>
+      <li><span class="approach-num">07</span><span class="t">Стоимость и&nbsp;оплата</span></li>
+      <li><span class="approach-num">08</span><span class="t">Дальнейшие этапы</span></li>
+      <li><span class="approach-num">09</span><span class="t">Расходы на&nbsp;инфраструктуру</span></li>
     </ul>
     <div class="parties">
       <div class="party">
@@ -294,7 +331,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
       <div class="party">
         <div class="party-label">Заказчик</div>
         <div class="party-name">Auto Rental &amp; Import</div>
-        <p>Аренда и импорт автомобилей<br>Кипр</p>
+        <p>Аренда и&nbsp;импорт автомобилей<br>Кипр</p>
       </div>
     </div>
   </section>
@@ -302,261 +339,257 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
   <section class="section" id="s01">
     <div class="section-head">
       <div class="section-num-row"><span class="n">01</span><span class="slash">/</span><span class="eyebrow">Контекст</span></div>
-      <h2 class="section-title">Текущая ситуация</h2>
+      <h2 class="section-title">Что&nbsp;это за&nbsp;пакет</h2>
     </div>
     <div class="section-body">
-      <p>Задача была сформулирована в процессе нескольких созвонов с заказчиком: создать полноценную платформу аренды автомобилей на Кипре. При этом платформа должна быть удобной для пользователя — на рынке уже работает много конкурентов, и здесь важно продумать удобный функционал и понятный, приятный дизайн, чтобы продукт был по-настоящему ценным.</p>
-      <p>Мы провели исследование рынка, чтобы найти готовое решение — например, по подписке, — которое можно было бы использовать как «мозг» бизнеса и минимально нарастить сверху нужный функционал. Подходящего готового продукта для этой ниши мы не нашли.</p>
-      <p>Для примера — один из самых популярных подобных сервисов, который нам удалось найти: <a href="https://hqrentalsoftware.com/pricing" target="_blank">HQ Rental Software</a> — страница тарифов. Пример подобран нашей командой, основываясь на списке функций, которые мы проговорили с заказчиком, и на анализе рынка и схожих продуктов. Обратите внимание: цены на подписку у него очень высокие, функционал — очень ограниченный, а количество автомобилей, которое можно добавить в продукт, — сильно лимитировано.</p>
-      <p>Помимо подписки, у подобных сервисов обычно есть разовый one-time fee — просто за начало пользования продуктом. У HQ Rental Software в пакете, который плюс-минус мог бы подойти под задуманный функционал (вероятно, Enterprise), эта разовая плата составляет €1 500. Пакет Professional стоит $250 в месяц, но позволяет разместить всего 50 единиц транспорта — точно недостаточно для бизнеса, который будет расти и развиваться. Стоимость пакета Enterprise на сайте не указана — ориентировочно от $500 в месяц, и даже он не покрывает весь функционал, который мы описали и планируем.</p>
-      <p>Если сложить подписку за месяцы использования, разовую плату за подключение и стоимость разработки недостающих функций (эти доработки в любом случае пришлось бы заказывать отдельно у разработчиков) — готовое решение не окажется выгоднее собственной платформы. При этом это по-прежнему чужой продукт, который в любой момент может исчезнуть — например, если его закроют или удалят сами разработчики, — и бизнес останется ни с чем. Жертвовать ради экономии, которой по факту нет, — смысла нет.</p>
-      <p>Мы не можем жертвовать функциональностью в пользу готового решения — тогда продукт не будет ценным, и шансы выделиться среди конкурентов будут практически нулевыми.</p>
-      <div class="callout">
-        <span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
-        <p>Если использовать чужую готовую платформу, весь бизнес аренды автомобилей будет держаться на инфраструктуре, которая принадлежит кому-то другому — у кого завтра могут лечь серверы, кто может в разы поднять цену или вовсе отключить платформу. Это риск потерять бизнес.</p>
+      <p>Платформа с&nbsp;двумя направлениями на&nbsp;одном сайте — аренда и&nbsp;импорт. Оба направления работают по&nbsp;единой механике: витрина, форма заявки, уведомление менеджеру. Разница — в&nbsp;наборе полей формы и&nbsp;содержании витрины.</p>
+      <div class="includes">
+        <div class="includes-label">Границы решения</div>
+        <ul>
+          <li>Сайт не&nbsp;ведёт календарь занятости и&nbsp;не&nbsp;подтверждает бронирование автоматически.</li>
+          <li>Менеджер вручную отмечает в&nbsp;админ-панели, доступен автомобиль или&nbsp;сейчас в&nbsp;аренде, и&nbsp;подтверждает даты после получения заявки.</li>
+          <li>Оплата происходит вне сайта.</li>
+          <li>Каталог автомобилей наполняет и&nbsp;поддерживает заказчик через админ-панель.</li>
+        </ul>
       </div>
-      <p>Поэтому в этом случае критически важно создавать полностью собственную платформу — чтобы со временем её можно было редактировать, дополнять новым функционалом, гибко масштабировать по количеству клиентов, автомобилей и возможностей. Это не лендинг, который делается «на раз-два», — это полноценная платформа, от которой будет зависеть успех всего бизнеса. Здесь единственно верный путь — строить её полностью под себя.</p>
+      <div class="pkg-grid pkg-grid-single">
+        <div class="pkg-card">
+          <h4>Стартовый пакет</h4>
+          <div class="pkg-price">€3 000</div>
+          <p>Фиксированная цена за&nbsp;весь объём, описанный ниже.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="section" id="s02">
     <div class="section-head">
-      <div class="section-num-row"><span class="n">02</span><span class="slash">/</span><span class="eyebrow">Процесс</span></div>
-      <h2 class="section-title">Как проходит работа</h2>
+      <div class="section-num-row"><span class="n">02</span><span class="slash">/</span><span class="eyebrow">Структура</span></div>
+      <h2 class="section-title">Структура сайта</h2>
     </div>
     <div class="section-body">
-      <p>Работа над платформой проходит в несколько последовательных этапов — от брифа до передачи готового дизайна в разработку.</p>
-      <ul class="approach-list">
-        <li><span class="approach-num">01</span><span class="t"><strong>Предоплата.</strong> Старт работы начинается с предоплаты.</span></li>
-        <li><span class="approach-num">02</span><span class="t"><strong>Бриф.</strong> Детальный, в письменном виде — по звонку или самостоятельным заполнением документа заказчиком. Фиксируем функционал, рынок, пожелания, количество автомобилей, референсы по стилю, целевую аудиторию и другие вопросы, на которые будем опираться при создании платформы.</span></li>
-        <li><span class="approach-num">03</span><span class="t"><strong>Анализ конкурентов и целевой аудитории.</strong> Собираем картину рынка: какие функции реализованы у конкурентов, как выглядят их сайты, где слабые и сильные стороны рынка и какие у нас есть возможности.</span></li>
-        <li><span class="approach-num">04</span><span class="t"><strong>Карта продукта.</strong> Прописываем путь пользователя по экранам — от точки входа на платформу до завершения аренды, включая профиль после аренды, отзыв о машине и подобные сценарии.</span></li>
-        <li><span class="approach-num">05</span><span class="t"><strong>Прототип.</strong> Чёрно-белый кликабельный черновик платформы — без иконок и фотографий, но с финальными текстами. Прорабатываем каждую деталь: раскрывающиеся списки, фильтры, сортировку, карточки автомобилей, количество кнопок в ряду. На этом этапе утверждаем и правим тексты и формулировки, проходимся по каждому экрану.</span></li>
-        <li><span class="approach-num">06</span><span class="t"><strong>UI-дизайн, десктоп.</strong> Отрисовываем визуал в цвете: шрифты, состояния кнопок (при наведении, при клике), анимации раскрывающихся списков и главных экранов. Готовим финальный вид платформы для десктопа.</span></li>
-        <li><span class="approach-num">07</span><span class="t"><strong>Адаптив — планшет и мобильная версия.</strong> После утверждения десктопа делаем и утверждаем адаптивные версии. Не менее 60% пользователей заходят с мобильных — информация должна оставаться читаемой и удобной даже на узком экране.</span></li>
-        <li><span class="approach-num">08</span><span class="t"><strong>Передача в разработку.</strong> Утверждённый дизайн и функционал выбранного тарифа передаются команде разработки.</span></li>
-        <li><span class="approach-num">09</span><span class="t"><strong>Разработка.</strong> Реализуем фронтенд и бэкенд платформы, административную панель и все согласованные интеграции — в соответствии с утверждённым дизайном и функционалом выбранного тарифа.</span></li>
-        <li><span class="approach-num">10</span><span class="t"><strong>Тестирование.</strong> Проверяем работу всех пользовательских сценариев, сравниваем реализацию с дизайном, устраняем ошибки.</span></li>
-        <li><span class="approach-num">11</span><span class="t"><strong>Сдача проекта.</strong> Готовая платформа проверяется дизайнером на соответствие макетам, вносятся финальные правки — и продукт сдаётся заказчику.</span></li>
-        <li><span class="approach-num">12</span><span class="t"><strong>Ежемесячная поддержка.</strong> Дальнейшее сопровождение платформы — по договорённости, на условиях, описанных в разделе «Техническая поддержка» ниже.</span></li>
-      </ul>
-      <p class="muted">На каждом этапе дизайна — от карты продукта до адаптивных версий — включено 3 круга правок; количество правок в рамках одного круга не ограничено. На этапе разработки правки в дизайн и добавление новых функций в стоимость не входят — это считается дополнительными часами работы дизайнера и разработчика. В стоимость каждого тарифа входит именно то, что описано в нём ниже.</p>
+      <p>Главная страница — хаб с&nbsp;двумя тайлами: «Аренда авто» и&nbsp;«Импорт авто», каждый ведёт на&nbsp;свой лендинг.</p>
+
+      <div class="includes">
+        <div class="includes-label">Лендинг 1 — Аренда</div>
+        <ul>
+          <li>Hero с&nbsp;оффером и&nbsp;кнопкой заявки</li>
+          <li>Категории авто плитками — эконом, комфорт, бизнес, SUV, кабриолет</li>
+          <li>Каталог автомобилей: карточка авто — галерея, характеристики, цена за&nbsp;сутки, статус доступности, кнопка «Оставить заявку»</li>
+          <li>Почему арендовать у&nbsp;нас</li>
+          <li>Как&nbsp;это работает</li>
+          <li>Точки выдачи — список с&nbsp;адресами</li>
+          <li>Отзывы и&nbsp;FAQ</li>
+          <li>Финальный CTA с&nbsp;формой</li>
+        </ul>
+      </div>
+
+      <div class="includes">
+        <div class="includes-label">Лендинг 2 — Импорт</div>
+        <ul>
+          <li>Hero и&nbsp;кнопка «Оставить заявку»</li>
+          <li>Как&nbsp;это работает — аукцион и&nbsp;сток Японии, информационный блок</li>
+          <li>Популярные модели — 6–8 карточек, клик подставляет модель в&nbsp;форму</li>
+          <li>Какой транспорт мы доставляем — клик подставляет категорию</li>
+          <li>Почему нам можно доверять</li>
+          <li>Кейсы, отзывы, FAQ</li>
+          <li>План оплаты 20 / 60 / 20 и&nbsp;реквизиты компании</li>
+          <li>Финальный CTA со&nbsp;встроенной формой</li>
+        </ul>
+      </div>
+
+      <div class="includes">
+        <div class="includes-label">Общие страницы</div>
+        <ul>
+          <li>О&nbsp;компании и&nbsp;контакты</li>
+          <li>FAQ</li>
+          <li>Юридическая информация</li>
+          <li>Реквизиты для&nbsp;оплаты</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="section" id="s03">
     <div class="section-head">
-      <div class="section-num-row"><span class="n">03</span><span class="slash">/</span><span class="eyebrow">Разработка</span></div>
-      <h2 class="section-title">Пакет Start</h2>
+      <div class="section-num-row"><span class="n">03</span><span class="slash">/</span><span class="eyebrow">Пользователь</span></div>
+      <h2 class="section-title">Что&nbsp;видит клиент</h2>
     </div>
     <div class="section-body">
-      <p>Рабочий сайт для двух направлений бизнеса с ручной обработкой заявок — необходимый минимум для запуска.</p>
-
-      <div class="includes">
-        <div class="includes-label">Структура сайта</div>
-        <ul>
-          <li>Главная страница с разделением на направления «Аренда» и «Импорт»</li>
-          <li>Лендинг аренды автомобилей и лендинг импорта автомобилей из Японии</li>
-          <li>Каталог автомобилей для аренды, карточки автомобилей и базовые фильтры</li>
-          <li>Популярные модели для импорта, отзывы, FAQ, контакты и юридические страницы</li>
-        </ul>
-      </div>
-
-      <div class="includes">
-        <div class="includes-label">Заявки и управление</div>
-        <ul>
-          <li>Заявка на аренду с местом получения и возврата, датой и временем</li>
-          <li>Быстрая и подробная формы заявки на импорт автомобиля</li>
-          <li>Подстановка выбранной модели или типа транспорта в форму заявки</li>
-          <li>Административная панель для управления автомобилями, заявками и содержимым сайта</li>
-          <li>Уведомления о новых заявках в Telegram</li>
-        </ul>
-      </div>
-
-      <div class="includes">
-        <div class="includes-label">Техническая основа</div>
-        <ul>
-          <li>Английская версия сайта с подготовкой структуры под другие языки</li>
-          <li>Адаптивное отображение на смартфонах, планшетах и компьютерах</li>
-          <li>Базовая техническая SEO-подготовка, тестирование и запуск</li>
-        </ul>
-      </div>
-
-      <div class="callout">
-        <span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
-        <p>Этого объёма достаточно для запуска, но в конкурентной нише аренды авто на Кипре одной рабочей формы заявки часто недостаточно, чтобы выделиться — пользователи сравнивают сайты по удобству и охотнее выбирают более функциональные. Рекомендуем рассмотреть пакет Business.</p>
-      </div>
-
-      <div class="pkg-grid pkg-grid-single">
-        <div class="pkg-card">
-          <h4>Пакет Start</h4>
-          <div class="pkg-price">€8 400</div>
-          <p>8–10 недель · включает дизайн сайта.</p>
-        </div>
-      </div>
+      <p><strong>Аренда.</strong> Просматривает каталог, выбирает категорию, открывает карточку машины с&nbsp;фотографиями, характеристиками, ценой за&nbsp;сутки и&nbsp;отметкой о&nbsp;доступности. Нажимает «Оставить заявку», указывает желаемые даты, точку получения и&nbsp;контакты. Получает подтверждение, что&nbsp;менеджер свяжется. Итоговые условия менеджер подтверждает по&nbsp;телефону.</p>
+      <p><strong>Импорт.</strong> Открывает форму с&nbsp;любой точки страницы. Форма одна, с&nbsp;двумя вкладками: «Быстрая заявка» (имя и&nbsp;контакт) и&nbsp;«Подробная заявка» (марка, модель, год, пробег, тип и&nbsp;объём двигателя, цвет, тип кузова, комплектация, бюджет, город доставки). Поля предзаполняются в&nbsp;зависимости от&nbsp;того, откуда нажали. После отправки клиент получает копию заявки на&nbsp;почту.</p>
+      <p class="muted">Блок «Популярные модели» — витрина востребованных моделей с&nbsp;ориентировочной ценой, заполняемая менеджером, а&nbsp;не&nbsp;каталог доступных лотов. Подбор конкретных автомобилей по&nbsp;аукционам и&nbsp;стокам Японии происходит на&nbsp;стороне менеджера после получения заявки.</p>
     </div>
   </section>
 
   <section class="section" id="s04">
     <div class="section-head">
-      <div class="section-num-row"><span class="n">04</span><span class="slash">/</span><span class="eyebrow">Разработка · рекомендуемый</span></div>
-      <h2 class="section-title">Пакет Business</h2>
+      <div class="section-num-row"><span class="n">04</span><span class="slash">/</span><span class="eyebrow">Управление</span></div>
+      <h2 class="section-title">Что&nbsp;видит менеджер</h2>
     </div>
     <div class="section-body">
-      <p>Всё из пакета Start плюс полноценная логика онлайн-бронирования и управления автопарком — набор функций, который мы обсудили с вами и зафиксировали в карте сайта.</p>
+      <p>Админ-панель по&nbsp;адресу <code>/admin</code>, вход по&nbsp;логину и&nbsp;паролю, русский интерфейс, две роли — администратор и&nbsp;менеджер.</p>
 
-      <div class="includes">
-        <div class="includes-label">Ключевые возможности</div>
-        <ul>
-          <li>Поиск, доступность и автоматический расчёт стоимости аренды по датам</li>
-          <li>Оформление и управление бронированиями в административной панели</li>
-          <li>Гибкое ценообразование: сезонные тарифы, минимальный срок, дополнительные услуги</li>
-          <li>Три языковые версии — английский, русский, греческий</li>
-          <li>Подготовка XML-фида для Bazaraki при наличии технических требований</li>
-        </ul>
+      <div class="tbl-wrap">
+        <table class="compare-table">
+          <thead><tr><th>Раздел</th><th>Что&nbsp;можно делать</th></tr></thead>
+          <tbody>
+            <tr><td>Автомобили (аренда)</td><td>Добавить, отредактировать, загрузить фото, задать цену за&nbsp;сутки, переключить статус «доступен / в&nbsp;аренде», снять с&nbsp;публикации, дублировать запись для&nbsp;быстрого заведения похожей машины</td></tr>
+            <tr><td>Популярные модели (импорт)</td><td>Витрина 6–8 моделей с&nbsp;фото и&nbsp;ориентировочной ценой</td></tr>
+            <tr><td>Заявки на&nbsp;аренду</td><td>Все поля заявки, статус, комментарии, выгрузка в&nbsp;CSV</td></tr>
+            <tr><td>Заявки на&nbsp;импорт</td><td>Все поля заявки, источник клика, статус, комментарии</td></tr>
+            <tr><td>Точки выдачи</td><td>Название, адрес, телефон</td></tr>
+            <tr><td>Контент</td><td>Тексты страниц, FAQ, отзывы, кейсы, реквизиты</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <p>Полный согласованный функционал — в карте сайта:</p>
-      <a href="https://app.notion.com/p/v2-3c11c752553681128f2cf7b4e3b7ab1b?source=copy_link" target="_blank" class="btn secondary no-arrow">
-        Открыть карту сайта
-      </a>
+      <p>Весь каталог и&nbsp;все тексты редактируются заказчиком самостоятельно, без&nbsp;обращения к&nbsp;разработчику. Фотографии можно загружать прямо с&nbsp;телефона — система автоматически подготовит нужные размеры. Записи сохраняются как&nbsp;черновики и&nbsp;публикуются, когда заполнены полностью.</p>
+      <p class="muted">При&nbsp;сдаче передаются 3–5 демонстрационных записей как&nbsp;образец заполнения и&nbsp;письменная инструкция для&nbsp;менеджера.</p>
 
-      <div class="pkg-grid pkg-grid-single" style="margin-top:28px;">
-        <div class="pkg-card">
-          <h4>Пакет Business</h4>
-          <div class="pkg-price">€12 600</div>
-          <p>11–14 недель · включает дизайн сайта.</p>
-        </div>
+      <div class="includes">
+        <div class="includes-label">Уведомления</div>
+        <ul>
+          <li>При&nbsp;новой заявке в&nbsp;Telegram приходит карточка со&nbsp;всеми данными и&nbsp;кнопками: «Взял в&nbsp;работу» / «Отказ» / «Открыть в&nbsp;админке» — нажатие меняет статус в&nbsp;базе.</li>
+          <li>Настраивается один чат или&nbsp;группа менеджеров.</li>
+          <li>Клиенту дублируется письмо с&nbsp;копией заявки.</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="section" id="s05">
     <div class="section-head">
-      <div class="section-num-row"><span class="n">05</span><span class="slash">/</span><span class="eyebrow">Разработка</span></div>
-      <h2 class="section-title">Пакет Platform</h2>
+      <div class="section-num-row"><span class="n">05</span><span class="slash">/</span><span class="eyebrow">Технологии</span></div>
+      <h2 class="section-title">Реализация</h2>
     </div>
     <div class="section-body">
-      <p>Всё из пакета Business плюс личные кабинеты и партнёрский канал продаж — набор возможностей, которые мы собрали, изучив, какие ещё решения есть у конкурентов в нише.</p>
-
       <div class="includes">
-        <div class="includes-label">Личные кабинеты клиентов</div>
+        <div class="includes-label">Стек</div>
         <ul>
-          <li>Кабинет аренды: текущие и прошлые бронирования, сохранённые данные клиента</li>
-          <li>Запрос на изменение или отмену бронирования</li>
-          <li>Кабинет заказчика автомобиля из Японии с отслеживанием этапов импорта</li>
+          <li>Next.js 15 — фронтенд и&nbsp;серверная часть в&nbsp;одном приложении</li>
+          <li>Payload CMS 3 — открытая MIT-лицензия, без&nbsp;абонентской платы</li>
+          <li>PostgreSQL 16</li>
+          <li>Один VPS, процесс под&nbsp;PM2, веб-сервер Caddy с&nbsp;автоматическим SSL</li>
+          <li>Cloudflare R2 — для&nbsp;фотографий и&nbsp;резервных копий</li>
         </ul>
       </div>
 
-      <div class="includes">
-        <div class="includes-label">Партнёрский портал</div>
-        <ul>
-          <li>Отдельные кабинеты для отелей, турагентств, таксопарков и других посредников</li>
-          <li>Оформление бронирований партнёрами от имени их клиентов, статистика продаж</li>
-          <li>Персональные партнёрские условия и комиссии, разграничение прав доступа</li>
-          <li>Двухфакторная авторизация для партнёрского кабинета</li>
-        </ul>
+      <div class="tbl-wrap">
+        <table class="compare-table">
+          <thead><tr><th>Таблица</th><th>Поля</th></tr></thead>
+          <tbody>
+            <tr><td>cars</td><td>марка, модель, год, класс, коробка, топливо, места, двери, опции, фото, цена за&nbsp;сутки, точка выдачи, статус доступности, публикация</td></tr>
+            <tr><td>popular_models</td><td>модель, фото, ориентировочная цена, бейдж</td></tr>
+            <tr><td>rental_requests</td><td>авто, желаемые даты, точка получения, контакты, статус</td></tr>
+            <tr><td>import_requests</td><td>тип формы, контакты, параметры авто, источник клика, статус</td></tr>
+            <tr><td>locations</td><td>точки выдачи, адрес, телефон</td></tr>
+            <tr><td>content</td><td>страницы, FAQ, отзывы, кейсы, реквизиты</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <p class="muted">Партнёрский портал формирует дополнительный канал продаж через отели и туристические компании — без необходимости обрабатывать все бронирования вручную. Также включает расширенные тарифы и архитектурную подготовку к подключению CRM.</p>
-
-      <div class="pkg-grid pkg-grid-single">
-        <div class="pkg-card">
-          <h4>Пакет Platform</h4>
-          <div class="pkg-price">€17 400</div>
-          <p>14–18 недель · включает дизайн сайта.</p>
-        </div>
+      <div class="callout">
+        <span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+        <p>Фундамент под&nbsp;три языка закладывается сразу: модель данных настраивается на&nbsp;три локали (английский, русский, греческий), все текстовые поля — переводимые. Первая версия публикуется на&nbsp;английском; языковые разделы (<code>/ru</code>, <code>/el</code>) с&nbsp;переключателем языка и&nbsp;корректной SEO-разметкой подключаются отдельным этапом, без&nbsp;переделки структуры данных.</p>
       </div>
+
+      <p class="muted">Фотографии хранятся в&nbsp;Cloudflare R2 и&nbsp;раздаются через CDN. Ежедневный дамп базы выгружается в&nbsp;то&nbsp;же&nbsp;хранилище, скрипт ротации хранит последние 7 копий.</p>
     </div>
   </section>
 
   <section class="section" id="s06">
     <div class="section-head">
-      <div class="section-num-row"><span class="n">06</span><span class="slash">/</span><span class="eyebrow">Доп. направление</span></div>
-      <h2 class="section-title">Приложения для iPhone и Android</h2>
+      <div class="section-num-row"><span class="n">06</span><span class="slash">/</span><span class="eyebrow">Процесс</span></div>
+      <h2 class="section-title">Как&nbsp;мы работаем</h2>
     </div>
     <div class="section-body">
-      <p>Реализуются отдельным этапом после запуска сайта и используют уже готовую серверную инфраструктуру.</p>
+      <ul class="approach-list">
+        <li><span class="approach-num">01</span><span class="t">Бриф — совместное обсуждение задачи. Приходить желательно подготовленным: посмотреть конкурентов, накидать must-have пункты по&nbsp;функционалу (например, что&nbsp;именно должно быть в&nbsp;карточке автомобиля — название, иконка пробега, иконка расхода топлива, год выпуска и&nbsp;т.д.)</span></li>
+        <li><span class="approach-num">02</span><span class="t">Референсы и&nbsp;стиль — утверждаем визуальное направление: цвета, стиль, на&nbsp;основе текущего логотипа и&nbsp;фирменных цветов</span></li>
+        <li><span class="approach-num">03</span><span class="t">Дизайн лендингов при&nbsp;помощи AI-инструментов — на&nbsp;основе брифа и&nbsp;референсов. Две итерации правок, в&nbsp;каждой — неограниченное количество правок за&nbsp;один заход</span></li>
+        <li><span class="approach-num">04</span><span class="t">Техническая сборка — команда собирает сайт на&nbsp;основе утверждённой сетки, отступов, стилистики и&nbsp;шрифтов. Тоже две итерации правок</span></li>
+        <li><span class="approach-num">05</span><span class="t">Наполнение и&nbsp;тестирование — утверждение каталога, финальная проверка</span></li>
+        <li><span class="approach-num">06</span><span class="t">Передача — после финальной оплаты сайт передаётся на&nbsp;сервер клиента, менеджера обучаем работе с&nbsp;админ-панелью, проект считается завершённым</span></li>
+      </ul>
 
-      <div class="includes">
-        <div class="includes-label">Возможности для клиентов</div>
-        <ul>
-          <li>Каталог, поиск по датам и классу, бронирование и просмотр деталей заказа</li>
-          <li>Личный кабинет, история аренд, повторное бронирование</li>
-          <li>Push-уведомления, заявки на импорт и отслеживание доставки автомобиля</li>
-          <li>Партнёрский режим для отелей и турагентств, подготовка к публикации в App Store и Google Play</li>
-        </ul>
-      </div>
-
-      <p class="muted">Стоимость предполагает использование готовой серверной части сайта. Дизайн мобильных экранов, состав функций и условия публикации в сторах согласуются отдельно.</p>
-
-      <div class="pkg-grid pkg-grid-single">
-        <div class="pkg-card">
-          <h4>Приложения iOS + Android</h4>
-          <div class="pkg-price">€5 200–9 100</div>
-          <p>5–8 недель. Ориентир цены — итоговая стоимость зависит от конечного функционала, который будет выбран.</p>
-        </div>
+      <div class="callout">
+        <span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+        <p>В&nbsp;этом документе прописаны общие мазки функционала, которые мы можем реализовать в&nbsp;рамках €3 000. Если&nbsp;на&nbsp;брифе выяснится, что&nbsp;нужен функционал за&nbsp;рамками описанного — бюджет придётся пересчитывать. А&nbsp;вот&nbsp;уточнение деталей внутри уже заложенного функционала (например, 5 видов иконок и&nbsp;данных в&nbsp;карточке товара) ничего не&nbsp;стоит — мы просто учтём это при&nbsp;создании базы данных. Поэтому важно до&nbsp;брифа проработать свои must-have пункты — самостоятельно, с&nbsp;командой или&nbsp;с&nbsp;помощью нейросетей.</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="s07">
     <div class="section-head">
-      <div class="section-num-row"><span class="n">07</span><span class="slash">/</span><span class="eyebrow">Опции</span></div>
-      <h2 class="section-title">Дополнительные функции</h2>
+      <div class="section-num-row"><span class="n">07</span><span class="slash">/</span><span class="eyebrow">Инвестиции</span></div>
+      <h2 class="section-title">Стоимость и&nbsp;оплата</h2>
     </div>
     <div class="section-body">
-      <p>Опции, которые можно подключить после запуска или включить в отдельный этап работ.</p>
-      <div class="tbl-wrap">
-        <table class="pricing">
-          <thead><tr><th>Доработка</th><th>Ориентир</th></tr></thead>
-          <tbody>
-            <tr><td class="fmt">Калькулятор стоимости импорта под ключ</td><td class="price">€720–1 440</td></tr>
-            <tr><td class="fmt">Блог для SEO-продвижения</td><td class="price">€360–720</td></tr>
-            <tr><td class="fmt">Интеграция с выбранной CRM</td><td class="price comment">Отдельная оценка</td></tr>
-            <tr><td class="fmt">SMS-уведомления</td><td class="price comment">Отдельная оценка</td></tr>
-            <tr><td class="fmt">Интеграция с Bazaraki сверх XML-фида</td><td class="price comment">После получения требований</td></tr>
-            <tr><td class="fmt">Онлайн-оплата и платёжный провайдер</td><td class="price comment">Следующий этап</td></tr>
-          </tbody>
-        </table>
+      <p>Фиксированная цена €3 000 за&nbsp;весь объём, описанный выше. Оплата делится на&nbsp;3 этапа по&nbsp;справедливым процентам:</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-num">33%</div>
+          <div class="stat-label">€1 000<br>После брифа, перед началом работы</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">33%</div>
+          <div class="stat-label">€1 000<br>После утверждения дизайна лендингов</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">34%</div>
+          <div class="stat-label">€1 000<br>Перед передачей системы на&nbsp;ваш сервер</div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="s08">
     <div class="section-head">
-      <div class="section-num-row"><span class="n">08</span><span class="slash">/</span><span class="eyebrow">После запуска</span></div>
-      <h2 class="section-title">Техническая поддержка</h2>
+      <div class="section-num-row"><span class="n">08</span><span class="slash">/</span><span class="eyebrow">Рост</span></div>
+      <h2 class="section-title">Дальнейшие этапы</h2>
     </div>
     <div class="section-body">
-      <p>Два формата сотрудничества после запуска сайта — годовой договор с фиксированным объёмом поддержки или выполнение работ по запросу.</p>
+      <p>Всё перечисленное реализуется на&nbsp;той же&nbsp;архитектуре, без&nbsp;переделки основы. Порядок и&nbsp;сроки определяет заказчик.</p>
 
-      <div class="pkg-grid">
-        <div class="pkg-card">
-          <h4>Годовой договор</h4>
-          <div class="pkg-price">€200<span style="font-size:14px;font-weight:500;color:var(--muted);">/мес</span></div>
-          <p>До 4 часов поддержки в месяц. При предоплате за год — €2 200 вместо €2 400 (месяц в подарок).</p>
-        </div>
-        <div class="pkg-card">
-          <h4>Без договора</h4>
-          <div class="pkg-price">€90<span style="font-size:14px;font-weight:500;color:var(--muted);">/час</span></div>
-          <p>По запросу, без ежемесячных обязательств. Перед началом согласовываются задача и объём.</p>
-        </div>
+      <div class="tbl-wrap">
+        <table class="compare-table">
+          <thead><tr><th>Функционал</th><th>Стоимость</th><th>Комментарий</th></tr></thead>
+          <tbody>
+            <tr><td>Календарь занятости и&nbsp;онлайн-бронирование</td><td>€900</td><td>Автоматическая проверка свободных дат</td></tr>
+            <tr><td>Языковые разделы на&nbsp;русском и&nbsp;греческом</td><td>€375</td><td>Адреса вида <code>/ru</code> и&nbsp;<code>/el</code>, переключатель языка, разметка hreflang. Фундамент уже заложен, переделка данных не&nbsp;требуется. Без&nbsp;стоимости перевода текстов</td></tr>
+            <tr><td>Редактируемые справочники и&nbsp;фильтры каталога</td><td>€375</td><td>Фильтры по&nbsp;марке, коробке, местам, цене</td></tr>
+            <tr><td>Интерактивная карта точек выдачи</td><td>€225</td><td>—</td></tr>
+            <tr><td>Выгрузка объявлений на&nbsp;Bazaraki</td><td>€375</td><td>Требует активного аккаунта Bazaraki Pro и&nbsp;спецификации полей от&nbsp;площадки</td></tr>
+            <tr><td>Личные кабинеты клиента и&nbsp;заказчика</td><td>€1 350</td><td>Статусы заявок, история, переписка</td></tr>
+            <tr><td>Калькулятор стоимости «под&nbsp;ключ»</td><td>от&nbsp;€600</td><td>Оценивается после предоставления реальных цифр и&nbsp;логики расчёта</td></tr>
+            <tr><td>Подключение CRM</td><td>по&nbsp;запросу</td><td>После выбора системы заказчиком</td></tr>
+          </tbody>
+        </table>
       </div>
+    </div>
+  </section>
 
-      <div class="includes">
-        <div class="includes-label">В годовой договор ежемесячно входит до 4 часов работ</div>
-        <ul>
-          <li>Контроль работоспособности сайта и основных пользовательских сценариев</li>
-          <li>Проверка заявок, бронирований и автоматических уведомлений</li>
-          <li>Технические обновления и исправление ошибок существующего функционала</li>
-          <li>Контроль резервного копирования</li>
-          <li>Консультации по работе административной панели</li>
-          <li>Небольшие технические корректировки существующего функционала</li>
-        </ul>
+  <section class="section" id="s09">
+    <div class="section-head">
+      <div class="section-num-row"><span class="n">09</span><span class="slash">/</span><span class="eyebrow">Инфраструктура</span></div>
+      <h2 class="section-title">Расходы на&nbsp;инфраструктуру</h2>
+    </div>
+    <div class="section-body">
+      <p class="muted">Оплачивается заказчиком напрямую провайдерам, без&nbsp;наценки студии. Как&nbsp;создать нужные аккаунты — мы вас научим.</p>
+
+      <div class="tbl-wrap">
+        <table class="compare-table">
+          <thead><tr><th>Позиция</th><th>В&nbsp;месяц</th></tr></thead>
+          <tbody>
+            <tr><td>VPS (Hetzner или&nbsp;Hostkey)</td><td>около 40 USD</td></tr>
+            <tr><td>Cloudflare R2</td><td>0</td></tr>
+            <tr><td>Домен</td><td>около 1 USD</td></tr>
+          </tbody>
+        </table>
       </div>
-
-      <p class="muted">Дополнительный час сверх включённого объёма — €70 по годовому договору, €90 без договора. Разработка новых функций и масштабные изменения оцениваются отдельно. Неиспользованные часы не переносятся на следующий месяц. Хостинг, домен и платные сторонние сервисы в стоимость поддержки не входят.</p>
+      <p class="muted">Cloudflare R2 бесплатен в&nbsp;пределах 10 ГБ хранилища, 1 млн операций записи и&nbsp;10 млн операций чтения в&nbsp;месяц, исходящий трафик не&nbsp;тарифицируется. Фотографии парка и&nbsp;ежедневные дампы укладываются в&nbsp;эти лимиты с&nbsp;запасом. Все аккаунты оформляются на&nbsp;заказчика.</p>
     </div>
   </section>
 
@@ -566,49 +599,36 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
       <h2 class="section-title">Условия</h2>
     </div>
     <div class="section-body">
-      <div class="terms-grid">
+      <div class="includes">
+        <ul>
+          <li>Фотографии автомобилей, тексты, юридические документы и&nbsp;реквизиты предоставляет заказчик. Сроки сдвигаются на&nbsp;срок задержки материалов.</li>
+          <li>Наполнение каталога автомобилей выполняет заказчик через админ-панель. Мы&nbsp;заводим 3–5 демонстрационных записей как&nbsp;образец и&nbsp;передаём инструкцию.</li>
+          <li>В&nbsp;стоимость входит по&nbsp;две итерации правок на&nbsp;этапе дизайна и&nbsp;на&nbsp;этапе технической сборки. Дополнительные правки и&nbsp;работы сверх описанного объёма согласуются отдельно.</li>
+          <li>Первая версия публикуется на&nbsp;английском языке. Структура данных сразу готова к&nbsp;трём языкам, языковые разделы сайта добавляются отдельным этапом.</li>
+          <li>Все аккаунты хостинга, домена и&nbsp;хранилища оформляются на&nbsp;заказчика.</li>
+          <li>После сдачи в&nbsp;течение 30 дней исправляются дефекты, возникшие по&nbsp;вине разработчика. Доработки и&nbsp;новые функции в&nbsp;этот период не&nbsp;входят.</li>
+        </ul>
+      </div>
+
+      <div class="terms-grid" style="margin-top:32px;">
         <div class="terms-block">
-          <h4>Что нужно согласовать до старта</h4>
+          <h4>Условия оказания услуг</h4>
           <ul>
-            <li>Модель бронирования: конкретный автомобиль или класс с назначением машины менеджером.</li>
-            <li>Правила сезонных тарифов, дополнительных услуг и подтверждения бронирований.</li>
-            <li>Перечень языков запуска и готовые переводы.</li>
-            <li>Технические требования Bazaraki и формулу расчёта импорта, если эти функции включаются в проект.</li>
-          </ul>
-        </div>
-        <div class="terms-block">
-          <h4>Важно</h4>
-          <p>Онлайн-эквайринг и CRM не требуются на первом этапе. Оплата аренды и импорта происходит вне сайта по согласованным условиям; заявки направляются в Telegram.</p>
-        </div>
-        <div class="terms-block">
-          <h4>Что не включено</h4>
-          <p>Хостинг, домен, платные сторонние сервисы, комиссии провайдеров, контент и переводы — если не согласовано иное. Итоговая стоимость и сроки фиксируются после согласования дизайн-макетов и функционального объёма.</p>
-        </div>
-        <div class="terms-block">
-          <h4>Сроки оплаты разработки</h4>
-          <ul>
-            <li>Предоплата — 30% при подписании договора.</li>
-            <li>Оплата перед началом дизайна — 30%.</li>
-            <li>Оплата перед началом разработки — 25%.</li>
-            <li>Постоплата — 15%, перед передачей исходного кода и всех доступов заказчику.</li>
+            <li>Все услуги оказываются в&nbsp;рабочие часы, 09:00–18:00.</li>
+            <li>Рабочие дни — с&nbsp;понедельника по&nbsp;пятницу, кроме государственных праздников Республики Кипр.</li>
           </ul>
         </div>
         <div class="terms-block">
           <h4>Способы оплаты</h4>
           <ul>
-            <li>Наличными при личной встрече.</li>
-            <li>На личные счета: Revolut, Wise, Payoneer, Bank of Cyprus.</li>
-            <li>На счёт компании (юрлицо) — Revolut или Bank of Cyprus, с добавлением НДС +20%.</li>
-            <li>На криптосчёт.</li>
+            <li>На&nbsp;личные счета: Revolut, Wise, Payoneer, Bank of&nbsp;Cyprus.</li>
+            <li>На&nbsp;счёт компании (юрлицо) — Revolut или&nbsp;Bank of&nbsp;Cyprus, с&nbsp;добавлением НДС +20%.</li>
+            <li>На&nbsp;криптосчёт.</li>
           </ul>
         </div>
         <div class="terms-block">
-          <h4>Условия оплаты поддержки</h4>
-          <ul>
-            <li>Поддержка по годовому договору — оплата помесячно или за год вперёд.</li>
-            <li>Поддержка без договора — оплата по факту согласованных работ.</li>
-            <li>Налоги применяются согласно условиям договора.</li>
-          </ul>
+          <h4>Цены</h4>
+          <p>Цены указаны в&nbsp;евро, если&nbsp;не&nbsp;оговорено иное, и&nbsp;не&nbsp;включают НДС и&nbsp;другие применимые налоги.</p>
         </div>
       </div>
     </div>
@@ -630,7 +650,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
     </div>
     <div class="footer-bottom">
       <span>Конфиденциально</span>
-      <span>Предложение актуально до 24 октября 2026</span>
+      <span>Предложение актуально до&nbsp;1 октября 2026</span>
     </div>
   </div>
 </footer>
